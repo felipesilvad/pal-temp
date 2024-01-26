@@ -1,0 +1,45 @@
+.pc__img {
+  width: 5rem;
+}
+
+.pc__card-w {
+  width: 25%;
+}
+
+.pc__card {
+  margin: 0.2rem;
+  background-color: $light;
+  border: solid 1px $lighter;
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 20%, 100% 100%, 100% 100%, 20% 100%, 0% 100%, 0% 20%);
+  clip-path: polygon(0% 0%, 95% 0%, 100% 20%, 100% 100%, 100% 100%, 20% 100%, 0% 100%, 0% 20%);
+}
+
+.pc__card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.pc__main-info {
+  padding: 0.25rem 0rem 0.5rem 0.5rem;
+  position: relative;
+}
+.containerdd { 
+  position: relative; 
+} 
+
+.containerddbackground { 
+  margin: 3rem; 
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  bottom: 0; 
+  z-index: -1; 
+  transform: rotate(300deg); 
+  -webkit-transform: rotate(300deg); 
+  color: #c6afaf; 
+} 

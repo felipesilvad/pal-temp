@@ -1,0 +1,88 @@
+$darker: #020912;
+$dark: #141D25;
+$med: #0F161A;
+$light: #282F38;
+$lighter: #4B545C;
+
+$dark_type: #9C104A;
+$dragon_type: #D978FF;
+$ground_type: #E4AA78;
+$eletric_tyoe: #FFDB2E;
+
+@import './pal_card';
+
+.App {
+  background-color: #141D25;
+  color: white;
+  min-height: 100vh;
+  padding-top: 3rem;
+}
+
+.new-container {
+  max-width: 1300px!important;
+}
+
+.type-img {
+  width: 1.6rem;
+}
+
+.work-img {
+  width: 1.4rem;
+}
+
+.ardela {
+  font-family: 'Ardela Edge', sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.ardela-nu {
+  font-family: 'Ardela Edge', sans-serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.roboto {
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.9);
+}
+
+.link {
+  color: inherit!important;
+}
+
+.txt-shadow {
+  text-shadow: 2px 2px 6px #000000;
+}
+
+.margin-main {
+  padding-top: 4.5rem;
+}
+
+.mb-0{
+  margin-bottom: 0rem!important;
+}
+.mb-n1 {
+  margin-bottom: -1rem!important;
+}
+
+.font-bolder {
+  font-weight: bolder;
+}
+
+.font-weight-normal {
+  font-weight: normal!important;
+}
+
+#react-select-2-listbox, #react-select-3-listbox{
+  z-index: 3!important;
+}
+
+.Selector{
+  color: black!important;
+}
+
+.btn-close {
+  color: white!important;
+}
