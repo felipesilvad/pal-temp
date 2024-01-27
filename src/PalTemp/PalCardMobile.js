@@ -2,8 +2,9 @@ import React from 'react';
 import { Image } from 'react-bootstrap';
 import PalWork from './PalWork';
 import PalType from './PalType';
+import PalCardTabs from './PalCardTabs';
 
-function PalCardMobile({pal}) {
+function PalCardMobile({pal, desktop}) {
   const img = `https://firebasestorage.googleapis.com/v0/b/nether-3311f.appspot.com/o/Pal%2Fpals%2F${pal.name&&(pal.name.replace(" ", "_"))}_icon.png?alt=media`
   
   if (pal) {
@@ -19,11 +20,16 @@ function PalCardMobile({pal}) {
               <div className='d-flex'>
                 <PalType pal={pal} />
               </div>
-              <PalWork pal={pal} />
+              {!desktop&&(
+                <PalWork pal={pal} />
+              )}
             </div>
             <Image className='pcm__img' src={img} />
           </div>
         </div>
+        {desktop&&(
+          <PalCardTabs pal={pal} />
+        )}
       </div>
     );
   }

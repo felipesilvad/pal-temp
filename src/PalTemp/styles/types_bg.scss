@@ -26,8 +26,8 @@ $dark_type: #9F0E4A;
   border: solid 1px;
   display: flex;
   margin-right: 0.2rem;
-  z-index: 3;
-  position: relative;
+  z-index: 3!important;
+  position: relative!important;
 }
 
 .dark_type {

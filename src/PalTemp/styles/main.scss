@@ -2,12 +2,14 @@
 @import './pal_card';
 @import './types_bg.scss';
 @import './work.scss';
+@import './filter.scss';
 
 .App {
   background-color: #141D25;
   color: white;
   min-height: 100vh;
   padding-top: 3rem;
+  font-family: 'Falling Sky', sans-serif;
 }
 
 .new-container {
