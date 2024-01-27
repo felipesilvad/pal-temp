@@ -1,15 +1,7 @@
-$darker: #020912;
-$dark: #141D25;
-$med: #0F161A;
-$light: #282F38;
-$lighter: #4B545C;
-
-$dark_type: #9C104A;
-$dragon_type: #D978FF;
-$ground_type: #E4AA78;
-$eletric_tyoe: #FFDB2E;
-
+@import './settings';
 @import './pal_card';
+@import './types_bg.scss';
+@import './work.scss';
 
 .App {
   background-color: #141D25;
@@ -20,14 +12,6 @@ $eletric_tyoe: #FFDB2E;
 
 .new-container {
   max-width: 1300px!important;
-}
-
-.type-img {
-  width: 1.6rem;
-}
-
-.work-img {
-  width: 1.4rem;
 }
 
 .ardela {
@@ -85,4 +69,8 @@ $eletric_tyoe: #FFDB2E;
 
 .btn-close {
   color: white!important;
+}
+
+.dark-bg {
+  background-color: $dark!important;
 }

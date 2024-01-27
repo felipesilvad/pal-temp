@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { query, collection, onSnapshot} from "firebase/firestore"; 
 import db from '../firebase';
 import {Container,Row,Col} from 'react-bootstrap';
-import PalCard from './PalCard';
+import PalCardMobile from './PalCardMobile';
 
 
 function PalsList() {
@@ -16,9 +16,9 @@ function PalsList() {
 
   return (
     <Container className='new-container'>
-      <div className='d-flex flex-wrap'>
+      <div className=''>
         {pals&&(pals.map(pal => (
-          <PalCard pal={pal} />
+          <PalCardMobile pal={pal} />
         )))}
       </div>
     </Container>
