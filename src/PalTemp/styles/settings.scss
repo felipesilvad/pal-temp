@@ -12,3 +12,25 @@ $med: #0F161A;
 $light: #282F38;
 $lighter: #4B545C;
 $highlight: #85CCE2;
+
+$hp-color: #28be78;
+$food-color: #DC7634;
+$atk-color: #f23a3a;
+$def-color: #2e83c9;
+$shot-color: #ed5aca;
+
+.hp-bar-color {
+  --bs-progress-bar-bg: #28be78!important;
+}
+.food-bar-color {
+  --bs-progress-bar-bg: #DC7634!important;
+}
+.atk-bar-color {
+  --bs-progress-bar-bg: #f23a3a!important;
+}
+.def-bar-color {
+  --bs-progress-bar-bg: #2e83c9!important;
+}
+.shot-bar-color {
+  --bs-progress-bar-bg: #ed5aca!important;
+}

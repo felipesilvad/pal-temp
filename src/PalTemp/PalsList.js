@@ -17,7 +17,6 @@ function PalsList() {
     });
   }, [])
 
-  console.log(windowWidth)
   return (
     <Container className='new-container'>
       {(windowWidth.current < 768) ? (
@@ -55,7 +54,8 @@ function PalsList() {
             {(view===1)&&(
               <div className='d-flex flex-wrap'>
                 {pals&&(pals.map(pal => (
-                  <PalCardMobile pal={pal} desktop={true} />
+                  <PalCardMobile pal={pal} desktop={true}
+                   />
                 )))}
               </div>
             )}

@@ -78,12 +78,15 @@
 .pct__stat-field {
   width: 15%;
   padding-left: 0.5rem;
+  height: 1rem;
+  line-height: 1;
 }
 
-.stat-hp {
-  width: 80%;
-  background: linear-gradient(120deg,
-    red 50%,
-    darken($light, 6) 50%
-  );
+.stat-bar {
+  width: 100%;
+  border-radius: 0.2rem;
+  height: 1rem;
+  line-height: 1;
+  background-color: rgba(black, 0)!important;
+  border-bottom: solid 1px $dark;
 }
