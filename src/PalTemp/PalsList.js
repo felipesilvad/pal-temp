@@ -17,6 +17,8 @@ function PalsList() {
     });
   }, [])
 
+  const [cardTab, setCardTab] = useState(1)
+
   return (
     <Container className='new-container'>
       {(windowWidth.current < 768) ? (
@@ -55,7 +57,7 @@ function PalsList() {
               <div className='d-flex flex-wrap'>
                 {pals&&(pals.map(pal => (
                   <PalCardMobile pal={pal} desktop={true}
-                   />
+                  cardTab={cardTab} setCardTab={setCardTab} />
                 )))}
               </div>
             )}

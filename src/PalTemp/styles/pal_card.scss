@@ -76,10 +76,12 @@
 }
 
 .pct__stat-field {
-  width: 15%;
-  padding-left: 0.5rem;
+  width: 25%;
+  padding-left: 0.3rem;
   height: 1rem;
   line-height: 1;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .stat-bar {
@@ -89,4 +91,32 @@
   line-height: 1;
   background-color: rgba(black, 0)!important;
   border-bottom: solid 1px $dark;
+}
+
+.tab-select {
+  display: flex;
+  font-family: 'Ardela Edge', sans-serif;
+  background-color: $darker;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+  text-transform: uppercase;
+  align-items: center;
+  border-top: 1px solid $lighter;
+}
+
+.tab-select-option {
+  cursor: pointer;
+  padding: 0rem 0.5rem;
+  border-radius: 0 0.5rem 0 0;
+  border-right: 1px solid $lighter;
+  transition: 250ms;
+  color: rgba(white, 0.6);
+}
+
+.tab-select-option.active {
+  background-color: darken($light, 6);
+  transition: 250ms;
+  color: rgba(white, 0.9);
+
 }
