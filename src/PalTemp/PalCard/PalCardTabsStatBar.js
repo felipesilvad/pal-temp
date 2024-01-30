@@ -12,7 +12,9 @@ function PalCardTabsStatBar({value, field, label, maxStats}) {
 
   return (
     <div className='d-flex w-100'>
-      <div className='pct__stat-field'>{label}</div>
+      <div className={`pct__stat-field`}>
+        {label}
+      </div>
       <ProgressBar className={`stat-bar ${field}-bar-color `} 
       animated={true} now={value} label={value} max={getMaxStat("hp")} />
     </div>

@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;900&display=swap');
 @import url('https://fonts.cdnfonts.com/css/falling-sky');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 $sm: 576px;
 $md: 768px;
@@ -19,39 +20,36 @@ $atk-color: #f23a3a;
 $def-color: #2e83c9;
 $shot-color: #ed5aca;
 
-.hp-bar-color {
+.HP-bar-color {
   --bs-progress-bar-bg: #28be78!important;
 }
-.food-bar-color {
-  --bs-progress-bar-bg: #DC7634!important;
-}
-.atk-bar-color {
+.Melee-bar-color {
   --bs-progress-bar-bg: #f23a3a!important;
 }
-.def-bar-color {
+.Defense-bar-color {
   --bs-progress-bar-bg: #2e83c9!important;
 }
-.shot-bar-color {
+.Shot-bar-color {
   --bs-progress-bar-bg: #ed5aca!important;
 }
-.support-bar-color {
+.Support-bar-color {
   --bs-progress-bar-bg: #ff9000!important;
 }
-.stamina-bar-color {
+.Stamina-bar-color {
   --bs-progress-bar-bg: #282F38!important;
 }
-.walk-bar-color {
+.Walk-bar-color {
   --bs-progress-bar-bg: #2e83c9!important;
 }
-.run-bar-color {
+.Run-bar-color {
   --bs-progress-bar-bg: #0576d3!important;
 }
-.slow_walk-bar-color {
+.Slow_Walk-bar-color {
   --bs-progress-bar-bg: #0b4b80!important;
 }
-.craft-bar-color {
+.Craft-bar-color {
   --bs-progress-bar-bg: #a59261!important;
 }
-.transporting-bar-color {
+.Transporting-bar-color {
   --bs-progress-bar-bg: #D9A26B!important;
 }

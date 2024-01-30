@@ -1,7 +1,7 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
-import PalWork from './PalWork';
-import PalType from './PalType';
+import PalWork from '../PalWork';
+import PalType from '../PalType';
 import PalCardTabs from './PalCardTabs';
 
 function PalCardMobile({pal, desktop, cardTab, setCardTab}) {
@@ -11,7 +11,7 @@ function PalCardMobile({pal, desktop, cardTab, setCardTab}) {
     return (
       <div className='pcm__card-w'>
         <div className='ardela background-number'>
-          #{pal.id.replace("B", "")}
+          {pal.id.replace("B", "")}
         </div>
         <div className='pcm__card'>
           <div className='d-flex justify-content-between'>
@@ -21,7 +21,7 @@ function PalCardMobile({pal, desktop, cardTab, setCardTab}) {
                 <PalType pal={pal} />
               </div>
               {!desktop&&(
-                <PalWork pal={pal} />
+                <PalWork work={pal.work} />
               )}
             </div>
             <Image className='pcm__img' src={img} />

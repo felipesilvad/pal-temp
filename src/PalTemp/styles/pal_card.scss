@@ -31,6 +31,7 @@
 .pcm__name{
   border-left: 0.2rem solid $highlight;
   padding-left: 0.3rem;
+  font-family: 'Falling Sky', sans-serif;
 }
 
 .background-number {
@@ -43,10 +44,11 @@
   line-height: 1;
   color: rgba(75, 84, 92, 0.16);
   font-family: 'Orbitron', sans-serif!important;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
 }
-
-
-
 
 .pcm__card-bg {
   position: absolute;
@@ -82,6 +84,7 @@
   line-height: 1;
   white-space: nowrap;
   overflow: hidden;
+  font-size: 0.9rem;
 }
 
 .stat-bar {

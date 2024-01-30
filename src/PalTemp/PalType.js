@@ -3,7 +3,7 @@ import { Image } from 'react-bootstrap';
 
 function PalType({pal}) {
   const getTypeImg = (type) => {
-    return `https://firebasestorage.googleapis.com/v0/b/nether-3311f.appspot.com/o/Pal%2Ftypes%2F${type}_icon.png?alt=media&token=41b8469a-827a-4b77-be1b-be66c75f9070`
+    return `https://firebasestorage.googleapis.com/v0/b/nether-3311f.appspot.com/o/Pal%2Ftypes%2F${type}_white_icon.png?alt=media&token=41b8469a-827a-4b77-be1b-be66c75f9070`
   }
   
   if (pal) {

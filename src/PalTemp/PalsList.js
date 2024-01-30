@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { query, collection, onSnapshot} from "firebase/firestore"; 
 import db from '../firebase';
 import {Container,Row,Col} from 'react-bootstrap';
-import PalCardMobile from './PalCardMobile';
+import PalCard from './PalCard/PalCard';
 import { LuRectangleHorizontal, LuRectangleVertical } from "react-icons/lu";
 import { CiViewTable } from "react-icons/ci";
 
@@ -26,7 +26,7 @@ function PalsList() {
 
         <div className=''>
           {pals&&(pals.map(pal => (
-            <PalCardMobile pal={pal} />
+            <PalCard pal={pal} />
           )))}
         </div>
 
@@ -56,7 +56,7 @@ function PalsList() {
             {(view===1)&&(
               <div className='d-flex flex-wrap'>
                 {pals&&(pals.map(pal => (
-                  <PalCardMobile pal={pal} desktop={true}
+                  <PalCard pal={pal} desktop={true}
                   cardTab={cardTab} setCardTab={setCardTab} />
                 )))}
               </div>
@@ -64,7 +64,7 @@ function PalsList() {
             {(view===2)&&(
               <div className='d-flex flex-wrap'>
                 {pals&&(pals.map(pal => (
-                  <PalCardMobile pal={pal} desktop={false} />
+                  <PalCard pal={pal} desktop={false} />
                 )))}
               </div>
             )}

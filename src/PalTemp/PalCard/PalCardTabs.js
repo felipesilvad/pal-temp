@@ -13,10 +13,10 @@ function PalCardTabs({pal, cardTab, setCardTab}) {
           <div className={`tab-select-option ${(cardTab===3)&&('active')}`} onClick={() => setCardTab(3)}>Work</div>
         </div>
         {(cardTab===1)&&(
-          <PalCardTabsStats pal={pal} />
+          <PalCardTabsStats stats={pal.main_stats} />
         )}
         {(cardTab===2)&&(
-          <PalCardTabsStats pal={pal} speed={true} />
+          <PalCardTabsStats stats={pal.speed} />
         )}
         {(cardTab===3)&&(
           <PalCardTabsWork work={pal.work} />
