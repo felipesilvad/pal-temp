@@ -12,70 +12,70 @@ function PalWork({pal}) {
   if (pal) {
     return (
       <div className='d-flex flex-wrap'>
-        {(pal.kindling>0)&&(
+        {(pal.work.kindling>0)&&(
           <div className='work-m__bg'>
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("kindling"))} />
-            <b className='mr-1'>{pal.kindling}</b>
+            <b className='mr-1'>{pal.work.kindling}</b>
           </div>
         )}
-        {(pal.watering>0)&&(
+        {(pal.work.watering>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("watering"))} />
-            <b className='mr-1'>{pal.watering}</b>
+            <b className='mr-1'>{pal.work.watering}</b>
           </div>
         )}
-        {(pal.planting>0)&&(
+        {(pal.work.planting>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("planting"))} />
-            <b className='mr-1'>{pal.planting}</b>
+            <b className='mr-1'>{pal.work.planting}</b>
           </div>
         )}
-        {(pal.generating_electricity>0)&&(
+        {(pal.work.generating_electricity>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("generating_Electricity"))} />
-            <b className='mr-1'>{pal.generating_electricity}</b>
+            <b className='mr-1'>{pal.work.generating_electricity}</b>
           </div>
         )}
-        {(pal.handiwork>0)&&(
+        {(pal.work.handiwork>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("handiwork"))} />
-            <b className='mr-1'>{pal.handiwork}</b>
+            <b className='mr-1'>{pal.work.handiwork}</b>
           </div>
         )}
-        {(pal.gathering>0)&&(
+        {(pal.work.gathering>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("gathering"))} />
-            <b className='mr-1'>{pal.gathering}</b>
+            <b className='mr-1'>{pal.work.gathering}</b>
           </div>
         )}
-        {(pal.mining>0)&&(
+        {(pal.work.mining>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("mining"))} />
-            <b className='mr-1'>{pal.mining}</b>
+            <b className='mr-1'>{pal.work.mining}</b>
           </div>
         )}
-        {(pal.medicine_production>0)&&(
+        {(pal.work.medicine_production>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("medicine_Production"))} />
-            <b className='mr-1'>{pal.medicine_production}</b>
+            <b className='mr-1'>{pal.work.medicine_production}</b>
           </div>
         )}
-        {(pal.cooling>0)&&(
+        {(pal.work.cooling>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("cooling"))} />
-            <b className='mr-1'>{pal.cooling}</b>
+            <b className='mr-1'>{pal.work.cooling}</b>
           </div>
         )}
-        {(pal.transporting>0)&&(
+        {(pal.work.transporting>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("transporting"))} />
-            <b className='mr-1'>{pal.transporting}</b>
+            <b className='mr-1'>{pal.work.transporting}</b>
           </div>
         )}
-        {(pal.farming>0)&&(
+        {(pal.work.farming>0)&&(
           <div className="work-m__bg">
             <Image className='work-img' src={getWorkImg(capitalizeFirstLetter("farming"))} />
-            <b className='mr-1'>{pal.farming}</b>
+            <b className='mr-1'>{pal.work.farming}</b>
           </div>
         )}
       </div>

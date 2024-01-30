@@ -16,13 +16,13 @@ function PalCardTabsStats({pal, speed}) {
     if (speed) {      
       return (
         <div>
-          <PalCardTabsStatBar value={pal.speed.walk} field={"hp"} label={"Walk"} maxStats={maxStats} />
-          <PalCardTabsStatBar value={pal.speed.run} field={"atk"} label={"Run"} maxStats={maxStats} />
+          <PalCardTabsStatBar value={pal.speed.walk} field={"walk"} label={"Walk"} maxStats={maxStats} />
+          <PalCardTabsStatBar value={pal.speed.run} field={"run"} label={"Run"} maxStats={maxStats} />
+          <PalCardTabsStatBar value={pal.speed.slow_walk} field={"slow_walk"} label={"Slow Walk"} maxStats={maxStats} />
           {pal.speed.mount&&(
-            <PalCardTabsStatBar value={pal.speed.mount} field={"def"} label={"Mount"} maxStats={maxStats} />
+            <PalCardTabsStatBar value={pal.speed.mount} field={"atk"} label={"Mount"} maxStats={maxStats} />
           )}
-          <PalCardTabsStatBar value={pal.speed.craft} field={"shot"} label={"Craft"} maxStats={maxStats} />
-          <PalCardTabsStatBar value={pal.speed.slow_walk} field={"support"} label={"Slow Walk"} maxStats={maxStats} />
+          <PalCardTabsStatBar value={pal.speed.craft} field={"craft"} label={"Craft"} maxStats={maxStats} />
           {pal.speed.transporting&&(
             <PalCardTabsStatBar value={pal.speed.transporting} field={"stamina"} label={"Transporting"} maxStats={maxStats} />
           )}

@@ -118,5 +118,14 @@
   background-color: darken($light, 6);
   transition: 250ms;
   color: rgba(white, 0.9);
+}
 
+.tab-work__div {
+  width: 50%;
+  background-color: $dark;
+  font-weight: lighter;
+}
+
+.tab-work__br {
+  border-right: solid 1px $lighter;
 }
