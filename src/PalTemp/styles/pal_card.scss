@@ -132,3 +132,23 @@
 .tab-work__br {
   border-right: solid 1px $lighter;
 }
+
+.pskill-title__div {
+  background-color: $med;
+  border: 0.1rem solid $light;
+  border-left: 0.15rem solid white;
+}
+.pskill-img {
+  width: -webkit-fill-available;
+}
+.pskill-img__div {
+  background-color: $light;
+  border-radius: 100%;
+  border: 0.1rem solid $lighter;
+  margin: 0.25rem;
+}
+
+.pskill-ability {
+  font-size: 0.85rem;
+  padding-left: 0.1rem;
+}
