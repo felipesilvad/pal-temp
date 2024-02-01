@@ -48,7 +48,7 @@ function ManagePartnerSkills() {
   }
 
   const updateTags = (tags, pSkill) => {
-    setDoc(doc(db, "dbs/Pal/partnerSkillTagClass", pSkill.id), {
+    setDoc(doc(db, "dbs/Pal/partnerSkills", pSkill.id), {
       tags: tags
     }, {merge: true})
   }
