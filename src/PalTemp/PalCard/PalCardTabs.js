@@ -25,7 +25,7 @@ function PalCardTabs({pal, cardTab, setCardTab}) {
           <PalCardTabsStats stats={pal.speed} />
         )}
         {(cardTab===4)&&(
-          <PalCardTabsPSkill skillID={pal.partner_skill} />
+          <PalCardTabsPSkill skill={pal.partner_skill} />
         )}
       </div>
     );

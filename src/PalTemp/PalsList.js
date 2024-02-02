@@ -11,11 +11,14 @@ function PalsList() {
   const [view, setView] = useState(1)
 
   const [pals, setPals] = useState([])
+
   useEffect (() => {
     onSnapshot(query(collection(db, `/dbs/Pal/pals`)), (snapshot) => {
       setPals(snapshot.docs.map(doc => ({...doc.data(), id: doc.id})))
     });
   }, [])
+
+
 
   const [cardTab, setCardTab] = useState(1)
 
