@@ -1,12 +1,16 @@
 import React from 'react';
 import ItemSquare from '../ItemSquare';
 
-function TacTabLv({items, lv, structures}) {
+function TacTabLv({items, lv, structures, itemsAll}) {
   
   const getItemData = (itemSlug) => {
     const isStructure = structures.filter(item => item.id === itemSlug)
+    const isItem = itemsAll.filter(item => item.slug === itemSlug)
+
     if (isStructure.length > 0) {
       return isStructure[0]
+    } else if (isItem.length > 0) {
+      return isItem[0]
     } else {
       return null
     }

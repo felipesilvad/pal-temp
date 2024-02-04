@@ -7,13 +7,17 @@ import TacTabLv from './TacTabLv';
 function TacTab() {
   const [technologyTab, setTechnologyTab] = useState([])
   const [structures, setStructures] = useState([])
+  const [items, setItems] = useState([])
 
   useEffect (() => {
     onSnapshot(query(doc(db, `/dbs/Pal`)), (doc) => {
       setTechnologyTab(doc.data().TechnologyTab)
     });
     onSnapshot(query(collection(db, `/dbs/Pal/structures`), where('unlock_lv', '!=', null)), (snapshot) => {
-      setStructures(snapshot.docs.map(doc => ({...doc.data(), id: doc.id, type2: "Structure"})))
+      setStructures(snapshot.docs.map(doc => ({...doc.data(), id: doc.id, type2: "Structures"})))
+    });
+    onSnapshot(query(collection(db, `/dbs/Pal/items`), where('unlock_lv', '!=', null)), (snapshot) => {
+      setItems(snapshot.docs.map(doc => ({...doc.data(), id: doc.id, type2: "Items"})))
     });
   }, [])
 
@@ -26,7 +30,7 @@ function TacTab() {
       <div className='tec__list'>
         {rangeArray.map((index) => (
           <TacTabLv items={technologyTab.filter(item => parseInt(item.lv) === (index+1))} lv={index+1}
-          structures={structures} />
+          structures={structures} itemsAll={items} />
         ))}
       </div>
     </Container>
