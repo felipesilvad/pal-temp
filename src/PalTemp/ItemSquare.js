@@ -18,6 +18,7 @@ function ItemSquare({item}) {
               item.img_id
             )
           }.webp?alt=media`} />
+          <Image className='item-pal-img' src={`https://firebasestorage.googleapis.com/v0/b/nether-3311f.appspot.com/o/Pal%2Fpals%2F${item.for_pal}_icon.png?alt=media`} />
         </div>
         <div className='item-square-title__div d-flex justify-content-center align-items-center'>
           <b className='item-square-title__txt'>{item.title}</b>

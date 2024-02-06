@@ -113,3 +113,11 @@
 }
 
 
+.item-pal-img {
+  width: 2.5rem;
+  background-color: $dark;
+  border-bottom-left-radius: 2rem;
+  border: 0.1rem solid $lighter;
+  position:absolute;
+  margin-left: 58px;
+}
